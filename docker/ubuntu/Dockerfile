@@ -54,4 +54,11 @@ RUN if [ ! $TORCHAUDIO_VERSION ]; \
     fi && \
     rm -r /root/.cache/pip
 
+# install pyg&graph-learn&torch
+RUN pip3 install graph-learn==1.1.0 torch==2.0.0 torch_geometric numpy==1.23.4 && \
+    rm -r /root/.cache/pip
+
+RUN pip3 install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-2.0.0+cpu.html && \
+    rm -r /root/.cache/pip
+
 WORKDIR /workspace

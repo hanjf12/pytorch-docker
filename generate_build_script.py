@@ -8,10 +8,6 @@ PYTORCH_VERSIONS = {
             '2.0.0', 'cpu', '0.15.0', 'cpu', '2.0.0', 'cpu',
             'https://download.pytorch.org/whl/cpu/torch_stable.html',
         ],
-        '11.2': [
-            '2.0.0', 'cu111', '0.15.0', 'cu111', '2.0.0', 'cu111',
-            'https://download.pytorch.org/whl/cu111/torch_stable.html',
-        ],
         '11.7': [
             '2.0.0', 'cu117', '0.15.0', 'cu117', '2.0.0', 'cu117',
             'https://download.pytorch.org/whl/cu117/torch_stable.html',
@@ -103,6 +99,10 @@ PYTORCH_VERSIONS = {
         '10.2': [
             '1.10.2', 'cu102', '0.11.3', 'cu102', '0.10.2', 'cu102',
             'https://download.pytorch.org/whl/cu102/torch_stable.html',
+        ],
+        '11.2': [
+            '1.10.2', 'cu111', '0.11.3', 'cu111', '0.10.2', 'cu111',
+            'https://download.pytorch.org/whl/cu111/torch_stable.html',
         ],
         '11.3': [
             '1.10.2', 'cu113', '0.11.3', 'cu113', '0.10.2', 'cu113',

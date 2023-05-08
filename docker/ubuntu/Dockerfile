@@ -58,7 +58,7 @@ RUN if [ ! $TORCHAUDIO_VERSION ]; \
 RUN pip3 install graph-learn==1.1.0 torch_geometric numpy==1.23.4 && \
     rm -r /root/.cache/pip
 
-RUN pip3 install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-2.0.0${PYTORCH_VERSION_SUFFIX}.html && \
+RUN pip3 install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-${PYTORCH_VERSION}${PYTORCH_VERSION_SUFFIX}.html && \
     rm -r /root/.cache/pip
 
 WORKDIR /workspace

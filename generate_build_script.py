@@ -8,6 +8,10 @@ PYTORCH_VERSIONS = {
             '2.0.0', 'cpu', '0.15.0', 'cpu', '2.0.0', 'cpu',
             'https://download.pytorch.org/whl/cpu/torch_stable.html',
         ],
+        '11.2': [
+            '2.0.0', 'cu111', '0.15.0', 'cu111', '2.0.0', 'cu111',
+            'https://download.pytorch.org/whl/cu111/torch_stable.html',
+        ],
         '11.7': [
             '2.0.0', 'cu117', '0.15.0', 'cu117', '2.0.0', 'cu117',
             'https://download.pytorch.org/whl/cu117/torch_stable.html',

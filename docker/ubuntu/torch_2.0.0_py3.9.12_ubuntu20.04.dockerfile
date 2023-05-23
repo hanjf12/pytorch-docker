@@ -20,6 +20,9 @@ RUN cd /tmp && \
     python -m pip install --upgrade pip && \
     rm -r /root/.cache/pip
 
+RUN pip3 install tornado connexion[swagger-ui] && \
+    rm -r /root/.cache/pip
+
 RUN pip3 install torch==2.0.0+cpu torchvision==0.15.0+cpu torchaudio==2.0.0+cpu -f https://download.pytorch.org/whl/cpu/torch_stable.html && \
     rm -r /root/.cache/pip
 
